@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kimberley’s Shih Tzu | International Luxury Breeder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0a0a0a;
+color:#f2f2f2;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,.9);
+border-bottom:1px solid #bfa046;
+z-index:1000;
+}
+
+header h1{
+font-family:'Cormorant Garamond',serif;
+color:#bfa046;
+font-size:24px;
+letter-spacing:2px;
+}
+
+nav a{
+color:#bfa046;
+text-decoration:none;
+margin-left:30px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:white;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url('https://images.unsplash.com/photo-1601758173928-63f8a2d8d7c5');
+background-size:cover;
+background-position:center;
+padding:20px;
+animation:fadeIn 2s ease-in-out;
+}
+
+.hero h2{
+font-family:'Cormorant Garamond',serif;
+font-size:60px;
+color:#bfa046;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin-bottom:30px;
+font-size:18px;
+}
+
+.btn{
+padding:15px 45px;
+background:#bfa046;
+color:black;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+section{
+padding:110px 20px;
+text-align:center;
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+section.show{
+opacity:1;
+transform:translateY(0);
+}
+
+section h2{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+color:#bfa046;
+margin-bottom:30px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:50px;
+}
+
+.card{
+background:#121212;
+border:1px solid #bfa046;
+padding:25px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 20px 50px rgba(191,160,70,.4);
+}
+
+.card img{
+width:100%;
+margin-bottom:15px;
+}
+
+.policy{
+background:#000;
+}
+
+.serious-box{
+margin:40px auto;
+max-width:650px;
+border:1px solid #bfa046;
+padding:30px;
+background:#111;
+}
+
+.serious-box h3{
+color:#bfa046;
+font-family:'Cormorant Garamond',serif;
+margin-bottom:15px;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:16px;
+margin:10px 0;
+background:#111;
+border:1px solid #bfa046;
+color:white;
+}
+
+.contact button{
+padding:16px 45px;
+background:#bfa046;
+border:none;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact button:hover{
+background:white;
+}
+
+footer{
+background:#000;
+padding:40px;
+border-top:1px solid #bfa046;
+text-align:center;
+font-size:14px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:38px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Kimberley’s Shih Tzu</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#puppies">Puppies</a>
+<a href="#policy">Policy</a>
+<a href="#contact">Contact</a>
+<a href="https://www.facebook.com/profile.php?id=61586064197297" target="_blank">Facebook</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>International Luxury Companions</h2>
+<p>Exclusively raised Shih Tzu puppies with elite care standards and global placement support.</p>
+<a href="#contact" class="btn">Begin Private Inquiry</a>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>Our Standards</h2>
+<p>
+We specialize in raising structurally sound, temperamentally balanced Shih Tzu companions.
+Our program emphasizes early socialization, selective pairing, and responsible global placement.
+</p>
+</div>
+</section>
+
+<section id="puppies">
+<div class="container">
+<h2>Available Companions</h2>
+<div class="grid">
+<div class="card">
+<img src="https://via.placeholder.com/500x350">
+<h3>Male Companion</h3>
+<p>Confident, affectionate, internationally eligible.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/500x350">
+<h3>Female Companion</h3>
+<p>Graceful, calm, exceptional temperament.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="policy" class="policy">
+<div class="container">
+<h2>International Placement Policy</h2>
+<p>
+We assist with international travel coordination where legally permitted.
+All placements require approval screening, contract agreement, and verified payment processing.
+Health certificates are provided according to destination regulations.
+</p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<h2>Private Inquiry</h2>
+<p>Email: mcfaithjr@gmail.com</p>
+
+<div class="serious-box">
+<h3>⚠️ Serious Inquiries Only</h3>
+<p>
+We prioritize exceptional lifelong placements for our companions.
+Video verification calls are available for approved families prior to final agreement.
+</p>
+</div>
+
+<form action="https://formsubmit.co/mcfaithjr@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<textarea name="message" rows="5" placeholder="Tell us about your location and the home you are offering..." required></textarea>
+<button type="submit">Submit Inquiry</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+© 2026 Kimberley’s Shih Tzu • International Luxury Breeder Brand
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const top = sec.getBoundingClientRect().top;
+if(top < window.innerHeight - 100){
+sec.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
